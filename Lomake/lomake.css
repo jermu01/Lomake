@@ -1,0 +1,15 @@
+h2 {
+    font-size: 17px;
+}
+
+div.relative1 {
+    position: relative;
+    left: 200px;
+    bottom: 22px;
+}
+
+div.relative2 {
+   position: relative;
+   left: 600px; 
+
+}

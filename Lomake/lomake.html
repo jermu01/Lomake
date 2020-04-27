@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomake</title>
+</head>
+<body>
+    <h1>Rekisteröitymislomake</h1>
+    <form name="lomake" onsubmit="tarkista()"; return false></form>
+    <form action="/action_page.php" autocomplete="on">
+        <label for="ID">Käyttäjä ID:</label>
+        <input type="text" id="fname" name="fname" required minlength="6"><br><br>
+
+        <label for="Salasana">Salasana:</label>
+        <input type="text" id="lname" name="lname" required><br><br>
+
+        <label for="Nimi">Nimi:</label>
+        <input name="nimi" type="text" id="Nimi" required><br><br>
+
+        <label for="Osoite">Osoite</label>
+        <input type="text" id="Osoite" name="osoite" required><br><br>
+
+        <label for="Maa">Maa:</label>
+        <select name="Maa" id="Maa" required>
+            <option value="Valitse maa">(Valitse maa)</option>
+            <option value="Suomi">Suomi</option>
+            <option value="Ruotsi">Ruotsi</option>
+            <option value="Venäjä">Venäjä</option>
+        </select>
+
+        <br><br><label for="Postinumero">Postinumero:</label>
+        <input type="text" id="Osoite" name="osoite" required minlength="5" maxlength="5">
+
+        <br><br><label for="Sähköposti">Sähköposti:</label>
+        <input id="email" name="email" type="email" class="required" title="This is a required field" required minlength="8">
+
+        <br><br><label for="Sukupuoli">Sukupuoli:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Mies</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Nainen</label><br></br>
+
+
+
+        <label for="Kieli">Kieli:</label>
+        <form action="/action_page.php">
+            <input type="checkbox" id="kieli1" name="kieli1" value="suomi" required>
+            <label for="kieli1"> Suomi</label>
+            <input type="checkbox" id="kieli2" name="kieli2" value="Muu kuin suomi">
+            <label for="kieli2"> Muu kuin suomi</label><br><br>
+
+
+        <label for="Lisätietoja">Lisätietoja:</label>
+        <form action="/action_page.php"><br><br>
+            <textarea name="message" rows="10" cols="30"></textarea>
+            <br><br>
+
+            <button onclick="myFunction()">Lähetä</button>
+
+            <p id="demo"></p>
+          </form>
+
+
+    </p>
+    <ul id="lomake"></ul>
+    <script src="lomake.js"></script>
+    <link rel="lomake" href="lomake.css">
+</body>
+</html>
